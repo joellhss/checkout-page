@@ -1,0 +1,364 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 64px 0 24px;
+} 
+
+header {
+    width: 960px;
+}
+
+h1 {
+    font-size: 44px;
+    color: #4E5150;
+}
+
+main {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 112px;
+}
+
+h2 {
+    margin-top: 51px;
+    font-size: 18px;
+    color: #333333;
+}
+
+form {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 465px;
+}
+
+.inputs {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.inputs p {
+    font-size: 12px;
+    color: #4F4F4F;
+    margin: 15px 0 6.97px;
+}
+
+.inputs input{
+    height: 56px;
+    border: 1px solid #828282;
+    border-radius: 12px;
+    padding-left: 42px;
+
+    font-size: 16px;
+    color: #333333;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;  
+    
+}
+
+.inputs input::placeholder {
+    color: #828282;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.inputs input:focus {
+    outline-offset: 1px;
+    outline-color: #F2994A;
+}
+
+.inputs div {
+    position: absolute;
+    fill: #828282;
+    top: 51px;
+    left: 10px;
+}
+
+.inputs .expand {
+    width: 21px;
+    height: 21px;
+    padding-top: 1px;
+    background-color: #E0E0E0;
+    border-radius: 4px;
+    position: absolute;
+    fill: #828282;
+    top: 55px;
+    left: 180px;
+}
+
+.inputs .expand:hover {
+    background-color: #828282;
+    fill: #E0E0E0;
+    cursor: pointer;
+}
+
+.inputs .expand:active {
+    scale: 1.1;
+}
+
+.inputs2 {
+    position: relative;
+    width: 100%;
+    display: flex;
+    gap: 31px;
+}
+
+.inputs2 .inputs {
+    width: 217px;
+}
+
+#country{
+    padding-right: 40px;
+}
+
+#countries {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 217px;
+    top: -35px;
+    left: 0px;
+    border-radius: 12px;
+    border: 1px solid #828282;
+    margin-top: -9px;
+    padding: 10px 0 10px;
+    transition-duration: 100ms;
+}
+
+#countries p{
+    padding: 10px 10px;
+    width: 100%;
+    margin: 0;
+}
+
+#countries p:hover, #countries p:active {
+    background-color: #E0E0E0; 
+    cursor: pointer;
+    transition-duration: 100ms;
+}
+
+.container {
+    display: block;
+    position: absolute;
+    top: 86%;
+    padding: 5px 0 5px 30px;
+    cursor: pointer;
+}
+
+.container input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 22px;
+    left: 0;
+    height: 21px;
+    width: 21px;
+    background-color: white;
+    border: solid 1px #4F4F4F;
+    border-radius: 5px;
+}
+
+.container:hover .checkmark {
+    background-color: #E0E0E0;
+    transition-duration: 100ms;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: #333333;
+    border: none;
+    transition-duration: 100ms;
+}
+
+.checkmark:after {
+    position: absolute;
+    display: none;
+    content: url(../assets/check-bold.svg);
+}
+
+input:checked ~ .checkmark:after {
+    display: block;
+    transition-duration: 100ms;
+}
+
+.button {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+}
+
+.button button {
+ width: 166px;
+ height: 54px;
+ border-radius: 12px;
+ border: none;
+ background-color: #F2994A;
+ color: #FFFFFF;
+ font-weight: 600;
+ font-size: 16px;
+ margin-top: 23px;
+ cursor: pointer;
+}
+
+.button button:hover {
+    background-color: #ce813e;
+}
+
+.button button:active {
+    scale: 1.02;
+}
+
+.resum {
+    display: flex;
+    flex-direction: column;
+    gap: 31.59px;
+    margin-top: 60px;
+    font-family: 'Montserrat', sans-serif;
+    width: 383px;
+    height: 535px;
+    background-color: #F2F2F2;
+    border-radius: 12px;
+    padding: 33px 30px;
+}
+
+.resum img {
+    width: 134.21px;
+    height: 136.27px;
+    border-radius: 13px;
+}
+
+.item {
+    display: flex;
+}
+
+.info {
+    margin-left: 20px;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 18px;
+    color: #4E5150;
+    margin-bottom: 6px;
+}
+
+.price {
+    display: flex;
+    gap: 10px;
+}
+
+.price div {
+    font-size: 12px;
+    color: #4E5150;
+    text-decoration: line-through;
+}
+
+.price div:first-child{
+    color: #F2994A;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 134.25px;
+    height: 52px;
+    border: 1px solid #828282;
+    border-radius: 12px;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.buttonResum {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 21.2px;
+    height: 21.2px;
+    background: #E0E0E0;
+    color: #828282;
+    border-radius: 4px;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.buttonResum:hover {
+    background-color: #cccccc;
+}
+
+.buttonResum:active {
+    scale: 1.05;
+}
+
+#more::after {
+    content: "+";
+}
+
+#less::after {
+    content: "-";
+}
+
+.calcItems {
+    display: flex;
+    justify-content: space-between;
+    border-top: solid 1px #BDBDBD;
+    padding: 10px 0;
+}
+
+#shipping {
+    margin-top: 25px;
+}
+
+.calcItems h2 {
+    margin: 0;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+footer p {
+    color: #4E5150;
+}
+
+footer p a {
+    text-decoration: none;
+    color: #4E5150;
+}
+
+footer p a:hover {
+    text-decoration: none;
+    color: #F2994A;
+}
+
+footer span {
+    color: #F2994A;
+}

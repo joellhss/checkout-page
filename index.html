@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <title>Checkout Page</title>
+</head>
+<body>
+    <header>
+        <h1>Checkout</h1>
+    </header>
+    <main>
+        <form action="" id="form">
+            <h2>Contact information</h2>
+
+            <label for="email" class="inputs">
+                <p>E-mail</p>
+                <input type="email" id="email" placeholder="Enter your email...">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M4 20q-.825 0-1.412-.587Q2 18.825 2 18V6q0-.825.588-1.412Q3.175 4 4 4h16q.825 0 1.413.588Q22 5.175 22 6v12q0 .825-.587 1.413Q20.825 20 20 20Zm8-7 8-5V6l-8 5-8-5v2Z"/></svg>
+                </div>
+            </label>
+
+            <label for="phone" class="inputs">
+                <p>Phone</p>
+                <input type="tel" id="phone" placeholder="Enter your phone...">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M19.95 21q-3.225 0-6.287-1.438-3.063-1.437-5.425-3.8-2.363-2.362-3.8-5.425Q3 7.275 3 4.05q0-.45.3-.75t.75-.3H8.1q.35 0 .625.225t.325.575l.65 3.5q.05.35-.012.637-.063.288-.288.513L7 10.9q1.05 1.8 2.625 3.375T13.1 17l2.35-2.35q.225-.225.588-.338.362-.112.712-.062l3.45.7q.35.075.575.337.225.263.225.613v4.05q0 .45-.3.75t-.75.3Z"/></svg>
+                </div>
+            </label>
+
+            <h2>Shipping address</h2>
+            <label for="name" class="inputs">
+                <p>Phone</p>
+                <input type="text" id="name" placeholder="Enter your full name...">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M5.85 17.1q1.275-.975 2.85-1.538Q10.275 15 12 15q1.725 0 3.3.562 1.575.563 2.85 1.538.875-1.025 1.363-2.325Q20 13.475 20 12q0-3.325-2.337-5.663Q15.325 4 12 4T6.338 6.337Q4 8.675 4 12q0 1.475.488 2.775.487 1.3 1.362 2.325ZM12 13q-1.475 0-2.488-1.012Q8.5 10.975 8.5 9.5t1.012-2.488Q10.525 6 12 6t2.488 1.012Q15.5 8.025 15.5 9.5t-1.012 2.488Q13.475 13 12 13Zm0 9q-2.075 0-3.9-.788-1.825-.787-3.175-2.137-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175 1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138 1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175-1.35 1.35-3.175 2.137Q14.075 22 12 22Z"/></svg>
+                </div>
+            </label>
+            <label for="address" class="inputs">
+                <p>Address</p>
+                <input type="text" id="address" placeholder="Your address...">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M4 21V9l8-6 8 6v12h-6v-7h-4v7Z"/></svg>
+                </div>
+            </label>
+            <label for="city" class="inputs">
+                <p>City</p>
+                <input type="text" id="city" placeholder="Your city...">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M3 21V7h4V3h10v8h4v10h-8v-4h-2v4Zm2-2h2v-2H5Zm0-4h2v-2H5Zm0-4h2V9H5Zm4 4h2v-2H9Zm0-4h2V9H9Zm0-4h2V5H9Zm4 8h2v-2h-2Zm0-4h2V9h-2Zm0-4h2V5h-2Zm4 12h2v-2h-2Zm0-4h2v-2h-2Z"/></svg>
+                </div>
+            </label>
+
+            <label class="container">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                <p>Save this information for next time</p>
+            </label>
+
+            <div class="inputs2">
+                <label for="country" class="inputs">
+                    <p>Country</p>
+                    <input type="text" placeholder="Your country..." id="country">
+                    
+                    <div class="expand">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="m10 13.062-5-5L6.062 7 10 10.938 13.938 7 15 8.062Z"/></svg>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M12 22q-2.075 0-3.9-.788-1.825-.787-3.175-2.137-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175 1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138 1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175-1.35 1.35-3.175 2.137Q14.075 22 12 22Zm-1-2.05V18q-.825 0-1.412-.587Q9 16.825 9 16v-1l-4.8-4.8q-.075.45-.138.9Q4 11.55 4 12q0 3.025 1.988 5.3Q7.975 19.575 11 19.95Zm6.9-2.55q.5-.55.9-1.188.4-.637.663-1.325.262-.687.4-1.412Q20 12.75 20 12q0-2.45-1.362-4.475Q17.275 5.5 15 4.6V5q0 .825-.587 1.412Q13.825 7 13 7h-2v2q0 .425-.287.712Q10.425 10 10 10H8v2h6q.425 0 .713.287.287.288.287.713v3h1q.65 0 1.175.387.525.388.725 1.013Z"/></svg> 
+                    </div>
+                    
+                </label>
+    
+                <label for="p-code" class="inputs">
+                    <p>Postal code</p>
+                    <input type="text" placeholder="Your postal code..." id="p-code">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M4 22q-.825 0-1.412-.587Q2 20.825 2 20V10q0-.825.588-1.413Q3.175 8 4 8h2V2h8v4H8v8h2V8h10q.825 0 1.413.587Q22 9.175 22 10v10q0 .825-.587 1.413Q20.825 22 20 22Z"/></svg>
+                    </div>
+                </label>
+
+                <div id="countries"></div>
+            </div>
+
+
+
+            <div class="button">
+                <button type="submit">Continue</button>
+            </div>
+        </form>
+
+        <div class="resum" id="items">
+            
+            <div class="item" id="backbag">
+                <img src="assets/photo1.png" alt="">
+                <div class="info">
+                    <h3>Vintage Backbag</h3>
+                    <div class="price">
+                        <div>$<span>54.99</span></div>
+                        <div>$<span>94.99</span></div>
+                    </div>
+                    <div class="quantity">
+                       <span class="buttonResum" id="less"></span>
+                        <span id="number">1</span>
+                        <span class="buttonResum" id="more"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" id="levishoes">
+                <img src="assets/photo2.png" alt="">
+                <div class="info">
+                    <h3>Levi Shoes</h3>
+                    <div class="price">
+                        <div>$<span>74.99</span></div>
+                        <div>$<span>124.99</span></div>
+                    </div>
+                    <div class="quantity">
+                       <span class="buttonResum" id="less"></span>
+                        <span id="number">1</span>
+                        <span class="buttonResum" id="more"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="calcItems" id="shipping">
+                <h2>Shipping</h2>
+                <div>$<span id="shippingValue">19</span></div>
+            </div>
+
+            <div class="calcItems" id="total">
+                <h2>Total</h2>
+                <div>$<span id="totalValue">148.98</span></div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Feito com <span>♥</span> por <a href="https://github.com/joellhss">Joel Sousa</a>.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
